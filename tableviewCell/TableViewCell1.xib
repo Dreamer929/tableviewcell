@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="cell1" selectionStyle="default" indentationWidth="10" rowHeight="174" id="KGk-i7-Jjw" customClass="TableViewCell1">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="174"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="317" height="173.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rzI-rW-U7A">
+                        <rect key="frame" x="8" y="10" width="301" height="130"/>
+                        <color key="backgroundColor" red="0.94865073499999997" green="0.94865073499999997" blue="0.94865073499999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="130" id="v2J-39-gR0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uud-3u-lfE">
+                        <rect key="frame" x="8" y="145" width="100.5" height="30"/>
+                        <color key="backgroundColor" red="0.94865073502990249" green="0.94865073502990249" blue="0.94865073502990249" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="删除">
+                            <color key="titleColor" red="0.90081845240000002" green="0.17908296130000001" blue="0.1176060268" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="delegateClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8fH-VG-JjH"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TK3-QA-c3v">
+                        <rect key="frame" x="208.5" y="145" width="100.5" height="30"/>
+                        <color key="backgroundColor" red="0.94865073499999997" green="0.94865073499999997" blue="0.94865073499999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <state key="normal" title="下移">
+                            <color key="titleColor" red="0.90081845240000002" green="0.17908296130000001" blue="0.1176060268" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="moveBottomClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UKV-FF-C9y"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfi-vV-cIx">
+                        <rect key="frame" x="108.5" y="145" width="100" height="30"/>
+                        <color key="backgroundColor" red="0.94865073499999997" green="0.94865073499999997" blue="0.94865073499999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="X4z-FO-tUD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="上移">
+                            <color key="titleColor" red="0.90081845240000002" green="0.17908296130000001" blue="0.1176060268" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="moveTopClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="h7R-QP-vkF"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Uud-3u-lfE" secondAttribute="bottom" constant="8.5" id="04o-MX-FU7"/>
+                    <constraint firstItem="Uud-3u-lfE" firstAttribute="top" secondItem="rzI-rW-U7A" secondAttribute="bottom" constant="5" id="1Ae-tb-uUg"/>
+                    <constraint firstItem="Uud-3u-lfE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="64I-Ob-m3G"/>
+                    <constraint firstAttribute="trailing" secondItem="rzI-rW-U7A" secondAttribute="trailing" constant="8" id="GgS-dX-4Pd"/>
+                    <constraint firstAttribute="bottom" secondItem="qfi-vV-cIx" secondAttribute="bottom" constant="8.5" id="Tzx-4f-fTm"/>
+                    <constraint firstItem="qfi-vV-cIx" firstAttribute="top" secondItem="rzI-rW-U7A" secondAttribute="bottom" constant="5" id="UW6-o1-2NU"/>
+                    <constraint firstItem="TK3-QA-c3v" firstAttribute="leading" secondItem="qfi-vV-cIx" secondAttribute="trailing" id="Vun-i3-YBO"/>
+                    <constraint firstAttribute="trailing" secondItem="TK3-QA-c3v" secondAttribute="trailing" constant="8" id="Xgp-R0-KPk"/>
+                    <constraint firstItem="TK3-QA-c3v" firstAttribute="top" secondItem="rzI-rW-U7A" secondAttribute="bottom" constant="5" id="bxx-yE-udB"/>
+                    <constraint firstItem="Uud-3u-lfE" firstAttribute="width" secondItem="qfi-vV-cIx" secondAttribute="width" id="cX0-Zd-RhN"/>
+                    <constraint firstItem="rzI-rW-U7A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="gEB-N4-dOQ"/>
+                    <constraint firstItem="rzI-rW-U7A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="kTQ-vX-WQ9"/>
+                    <constraint firstItem="qfi-vV-cIx" firstAttribute="width" secondItem="TK3-QA-c3v" secondAttribute="width" id="pxb-Mg-adf"/>
+                    <constraint firstAttribute="bottom" secondItem="TK3-QA-c3v" secondAttribute="bottom" constant="8.5" id="xaB-yT-cbI"/>
+                    <constraint firstItem="qfi-vV-cIx" firstAttribute="leading" secondItem="Uud-3u-lfE" secondAttribute="trailing" id="xte-pN-WKL"/>
+                    <constraint firstItem="qfi-vV-cIx" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="zL2-B2-pi4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomMoveBtn" destination="TK3-QA-c3v" id="WZL-3M-GJ0"/>
+                <outlet property="deleteButn" destination="Uud-3u-lfE" id="1ro-53-B9o"/>
+                <outlet property="textView" destination="rzI-rW-U7A" id="fiS-NT-K9C"/>
+                <outlet property="topMoveBtn" destination="qfi-vV-cIx" id="ESv-JL-fDB"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="-59"/>
+        </tableViewCell>
+    </objects>
+</document>
